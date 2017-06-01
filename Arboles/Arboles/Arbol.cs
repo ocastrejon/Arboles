@@ -34,9 +34,9 @@ namespace Arboles
             else agregar(n, r.hid);
         }
 
-        public string inOrder()
-        {
+        //public string inOrder()
+        //{
 
-        }
+        //}
     }
 }

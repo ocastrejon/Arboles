@@ -12,9 +12,9 @@ namespace Arboles
 {
     public partial class Form1 : Form
     {
+            Arbol a = new Arbol();
         public Form1()
         {
-            Arbol a = new Arbol();
             InitializeComponent();
         }
 
@@ -26,7 +26,7 @@ namespace Arboles
         private void bttnAgregar_Click(object sender, EventArgs e)
         {
             Nodo n = new Nodo(Convert.ToInt32(txtBxDato.Text));
-
+            a.agregar(n);
         }
     }
 }

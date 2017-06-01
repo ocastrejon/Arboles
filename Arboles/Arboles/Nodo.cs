@@ -16,7 +16,7 @@ namespace Arboles
 
         public Nodo(int dato)
         {
-
+            _dato = dato;
         }
 
         public override string ToString()
