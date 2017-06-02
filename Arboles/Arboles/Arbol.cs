@@ -34,9 +34,76 @@ namespace Arboles
             else agregar(n, r.hid);
         }
 
-        //public string inOrder()
-        //{
+        public string inOrder()
+        {
+            if (raiz == null)
+                return "";
+            else
+                return inOrder(raiz);
+        }
 
-        //}
+        private string inOrder(Nodo r)
+        {
+            string res = "";
+
+            //I
+            if (r.hiz != null)
+                res += inOrder(r.hiz);
+            //R
+            res += r.ToString();
+            //D
+            if (r.hid != null)
+                res += inOrder(r.hid);
+
+            return res;
+        }
+
+        public string postOrder()
+        {
+            if (raiz == null)
+                return "";
+            else
+                return postOrder(raiz);
+        }
+
+        private string postOrder(Nodo r)
+        {
+            string res = "";
+
+            //I
+            if (r.hiz != null)
+                res += postOrder(r.hiz);
+            //D
+            if (r.hid != null)
+                res += postOrder(r.hid);
+            //R
+            res += r.ToString();
+
+            return res;
+        }
+
+        public string preOrder()
+        {
+            if (raiz == null)
+                return "";
+            else
+                return preOrder(raiz);
+        }
+
+        private string preOrder(Nodo r)
+        {
+            string res = "";
+
+            //R
+            res += r.ToString();
+            //I
+            if (r.hiz != null)
+                res += preOrder(r.hiz);
+            //D
+            if (r.hid != null)
+                res += preOrder(r.hid);
+
+            return res;
+        }
     }
 }

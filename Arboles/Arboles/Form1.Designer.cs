@@ -30,6 +30,10 @@
         {
             this.bttnAgregar = new System.Windows.Forms.Button();
             this.txtBxDato = new System.Windows.Forms.TextBox();
+            this.bttnpreOrder = new System.Windows.Forms.Button();
+            this.bttninOrder = new System.Windows.Forms.Button();
+            this.bttnpostOrder = new System.Windows.Forms.Button();
+            this.txtBxPreInPost = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bttnAgregar
@@ -52,11 +56,56 @@
             this.txtBxDato.Size = new System.Drawing.Size(122, 34);
             this.txtBxDato.TabIndex = 1;
             // 
+            // bttnpreOrder
+            // 
+            this.bttnpreOrder.AutoSize = true;
+            this.bttnpreOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnpreOrder.Location = new System.Drawing.Point(25, 147);
+            this.bttnpreOrder.Name = "bttnpreOrder";
+            this.bttnpreOrder.Size = new System.Drawing.Size(130, 39);
+            this.bttnpreOrder.TabIndex = 2;
+            this.bttnpreOrder.Text = "Pre Order";
+            this.bttnpreOrder.UseVisualStyleBackColor = true;
+            // 
+            // bttninOrder
+            // 
+            this.bttninOrder.AutoSize = true;
+            this.bttninOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttninOrder.Location = new System.Drawing.Point(174, 147);
+            this.bttninOrder.Name = "bttninOrder";
+            this.bttninOrder.Size = new System.Drawing.Size(122, 39);
+            this.bttninOrder.TabIndex = 3;
+            this.bttninOrder.Text = "In Order";
+            this.bttninOrder.UseVisualStyleBackColor = true;
+            // 
+            // bttnpostOrder
+            // 
+            this.bttnpostOrder.AutoSize = true;
+            this.bttnpostOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttnpostOrder.Location = new System.Drawing.Point(326, 147);
+            this.bttnpostOrder.Name = "bttnpostOrder";
+            this.bttnpostOrder.Size = new System.Drawing.Size(140, 39);
+            this.bttnpostOrder.TabIndex = 4;
+            this.bttnpostOrder.Text = "Post Order";
+            this.bttnpostOrder.UseVisualStyleBackColor = true;
+            // 
+            // txtBxPreInPost
+            // 
+            this.txtBxPreInPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxPreInPost.Location = new System.Drawing.Point(25, 214);
+            this.txtBxPreInPost.Name = "txtBxPreInPost";
+            this.txtBxPreInPost.Size = new System.Drawing.Size(441, 34);
+            this.txtBxPreInPost.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.ClientSize = new System.Drawing.Size(497, 288);
+            this.Controls.Add(this.txtBxPreInPost);
+            this.Controls.Add(this.bttnpostOrder);
+            this.Controls.Add(this.bttninOrder);
+            this.Controls.Add(this.bttnpreOrder);
             this.Controls.Add(this.txtBxDato);
             this.Controls.Add(this.bttnAgregar);
             this.Name = "Form1";
@@ -71,6 +120,10 @@
 
         private System.Windows.Forms.Button bttnAgregar;
         private System.Windows.Forms.TextBox txtBxDato;
+        private System.Windows.Forms.Button bttnpreOrder;
+        private System.Windows.Forms.Button bttninOrder;
+        private System.Windows.Forms.Button bttnpostOrder;
+        private System.Windows.Forms.TextBox txtBxPreInPost;
     }
 }
 
