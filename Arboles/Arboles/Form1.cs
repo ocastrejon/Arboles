@@ -27,6 +27,25 @@ namespace Arboles
         {
             Nodo n = new Nodo(Convert.ToInt32(txtBxDato.Text));
             a.agregar(n);
+            txtBxDato.Clear();
+        }
+
+        private void bttnpreOrder_Click(object sender, EventArgs e)
+        {
+            txtBxPreInPost.Clear();
+            txtBxPreInPost.Text = a.preOrder();
+        }
+
+        private void bttninOrder_Click(object sender, EventArgs e)
+        {
+            txtBxPreInPost.Clear();
+            txtBxPreInPost.Text = a.inOrder();
+        }
+
+        private void bttnpostOrder_Click(object sender, EventArgs e)
+        {
+            txtBxPreInPost.Clear();
+            txtBxPreInPost.Text = a.postOrder();
         }
     }
 }

@@ -66,6 +66,7 @@
             this.bttnpreOrder.TabIndex = 2;
             this.bttnpreOrder.Text = "Pre Order";
             this.bttnpreOrder.UseVisualStyleBackColor = true;
+            this.bttnpreOrder.Click += new System.EventHandler(this.bttnpreOrder_Click);
             // 
             // bttninOrder
             // 
@@ -77,6 +78,7 @@
             this.bttninOrder.TabIndex = 3;
             this.bttninOrder.Text = "In Order";
             this.bttninOrder.UseVisualStyleBackColor = true;
+            this.bttninOrder.Click += new System.EventHandler(this.bttninOrder_Click);
             // 
             // bttnpostOrder
             // 
@@ -88,6 +90,7 @@
             this.bttnpostOrder.TabIndex = 4;
             this.bttnpostOrder.Text = "Post Order";
             this.bttnpostOrder.UseVisualStyleBackColor = true;
+            this.bttnpostOrder.Click += new System.EventHandler(this.bttnpostOrder_Click);
             // 
             // txtBxPreInPost
             // 
