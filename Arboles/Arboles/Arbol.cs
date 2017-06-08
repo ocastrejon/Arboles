@@ -34,6 +34,11 @@ namespace Arboles
             else agregar(n, r.hid);
         }
 
+        public void buscar()
+        {
+            //Falta este
+        }
+
         public string inOrder()
         {
             if (raiz == null)

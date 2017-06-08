@@ -13,6 +13,8 @@ namespace Arboles
     public partial class Form1 : Form
     {
             Arbol a = new Arbol();
+            Vector v = new Vector();
+
         public Form1()
         {
             InitializeComponent();
@@ -46,6 +48,19 @@ namespace Arboles
         {
             txtBxPreInPost.Clear();
             txtBxPreInPost.Text = a.postOrder();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int[] z = new int[8];
+                z = v.llenarVector();
+            for (int i = 0; i < z.Length; i++)
+                txtBxVector.Text += z[i].ToString() + Environment.NewLine;
+        }
+
+        private void bttnBusBinaria_Click(object sender, EventArgs e)
+        {
+            v.busquedaBinaria(Convert.ToInt32(txtBxNumBuscar.Text));
         }
     }
 }
