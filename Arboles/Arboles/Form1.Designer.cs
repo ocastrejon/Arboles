@@ -157,6 +157,7 @@
             this.bttnBuscarArbol.TabIndex = 10;
             this.bttnBuscarArbol.Text = "Buscar";
             this.bttnBuscarArbol.UseVisualStyleBackColor = true;
+            this.bttnBuscarArbol.Click += new System.EventHandler(this.bttnBuscarArbol_Click);
             // 
             // Form1
             // 

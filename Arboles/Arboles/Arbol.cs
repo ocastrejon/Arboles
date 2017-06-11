@@ -34,9 +34,29 @@ namespace Arboles
             else agregar(n, r.hid);
         }
 
-        public void buscar()
+        public int buscar(Nodo busca)
         {
-            //Falta este
+            if (raiz == null)
+                return 0;
+            else
+                return buscar(busca, raiz);
+        }
+
+        private int buscar(Nodo bus, Nodo r)
+        {
+            if( r != null)
+            {
+                if (bus.dato != r.dato)
+                {
+                    if (bus.dato < r.dato)
+                        return buscar(bus, r.hiz);
+                    else
+                        return buscar(bus, r.hid);
+                }
+                else
+                    return bus.dato;
+            }
+            return 0;
         }
 
         public string inOrder()

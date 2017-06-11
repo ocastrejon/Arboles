@@ -62,5 +62,11 @@ namespace Arboles
         {
             v.busquedaBinaria(Convert.ToInt32(txtBxNumBuscar.Text));
         }
+
+        private void bttnBuscarArbol_Click(object sender, EventArgs e)
+        {
+            Nodo x = new Nodo(Convert.ToInt32(txtBxDato.Text));
+            txtBxPreInPost.Text = a.buscar(x).ToString();
+        }
     }
 }
