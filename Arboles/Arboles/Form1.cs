@@ -53,7 +53,7 @@ namespace Arboles
         private void button1_Click(object sender, EventArgs e)
         {
             txtBxVector.Clear();
-            int[] z = new int[8];
+            int[] z = new int[500];
                 z = v.llenarVector();
             for (int i = 0; i < z.Length; i++)
                 txtBxVector.Text += z[i].ToString() + Environment.NewLine;
@@ -63,7 +63,14 @@ namespace Arboles
         {
             int a = v.busquedaBinaria(Convert.ToInt32(txtBxNumBuscar.Text));
             txtBxNumBuscar.Clear();
+            txtBxPosicion.Clear();
+            txtBxComparaciones.Clear();
             txtBxNumBuscar.Text = a.ToString();
+            if (a == 0)
+                txtBxPosicion.Text = "0";
+            else
+                txtBxPosicion.Text = v.pos.ToString();
+            txtBxComparaciones.Text = v.compa.ToString();
         }
 
         private void bttnBuscarArbol_Click(object sender, EventArgs e)
