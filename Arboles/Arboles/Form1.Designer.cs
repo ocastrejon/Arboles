@@ -39,6 +39,10 @@
             this.txtBxVector = new System.Windows.Forms.TextBox();
             this.txtBxNumBuscar = new System.Windows.Forms.TextBox();
             this.bttnBuscarArbol = new System.Windows.Forms.Button();
+            this.txtBxPosicion = new System.Windows.Forms.TextBox();
+            this.txtBxComparaciones = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bttnAgregar
@@ -109,7 +113,7 @@
             // 
             this.button1.AutoSize = true;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(112, 233);
+            this.button1.Location = new System.Drawing.Point(27, 219);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 39);
             this.button1.TabIndex = 6;
@@ -121,7 +125,7 @@
             // 
             this.bttnBusBinaria.AutoSize = true;
             this.bttnBusBinaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnBusBinaria.Location = new System.Drawing.Point(112, 303);
+            this.bttnBusBinaria.Location = new System.Drawing.Point(27, 289);
             this.bttnBusBinaria.Name = "bttnBusBinaria";
             this.bttnBusBinaria.Size = new System.Drawing.Size(132, 68);
             this.bttnBusBinaria.TabIndex = 7;
@@ -132,7 +136,7 @@
             // txtBxVector
             // 
             this.txtBxVector.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxVector.Location = new System.Drawing.Point(275, 233);
+            this.txtBxVector.Location = new System.Drawing.Point(190, 219);
             this.txtBxVector.Multiline = true;
             this.txtBxVector.Name = "txtBxVector";
             this.txtBxVector.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -142,7 +146,7 @@
             // txtBxNumBuscar
             // 
             this.txtBxNumBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxNumBuscar.Location = new System.Drawing.Point(112, 409);
+            this.txtBxNumBuscar.Location = new System.Drawing.Point(27, 395);
             this.txtBxNumBuscar.Name = "txtBxNumBuscar";
             this.txtBxNumBuscar.Size = new System.Drawing.Size(132, 34);
             this.txtBxNumBuscar.TabIndex = 9;
@@ -159,11 +163,51 @@
             this.bttnBuscarArbol.UseVisualStyleBackColor = true;
             this.bttnBuscarArbol.Click += new System.EventHandler(this.bttnBuscarArbol_Click);
             // 
+            // txtBxPosicion
+            // 
+            this.txtBxPosicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxPosicion.Location = new System.Drawing.Point(315, 269);
+            this.txtBxPosicion.Name = "txtBxPosicion";
+            this.txtBxPosicion.Size = new System.Drawing.Size(132, 34);
+            this.txtBxPosicion.TabIndex = 11;
+            // 
+            // txtBxComparaciones
+            // 
+            this.txtBxComparaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxComparaciones.Location = new System.Drawing.Point(315, 368);
+            this.txtBxComparaciones.Name = "txtBxComparaciones";
+            this.txtBxComparaciones.Size = new System.Drawing.Size(132, 34);
+            this.txtBxComparaciones.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(310, 237);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 29);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Posición:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(310, 336);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(189, 29);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Comparaciones:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 469);
+            this.ClientSize = new System.Drawing.Size(507, 469);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtBxComparaciones);
+            this.Controls.Add(this.txtBxPosicion);
             this.Controls.Add(this.bttnBuscarArbol);
             this.Controls.Add(this.txtBxNumBuscar);
             this.Controls.Add(this.txtBxVector);
@@ -196,6 +240,10 @@
         private System.Windows.Forms.TextBox txtBxVector;
         private System.Windows.Forms.TextBox txtBxNumBuscar;
         private System.Windows.Forms.Button bttnBuscarArbol;
+        private System.Windows.Forms.TextBox txtBxPosicion;
+        private System.Windows.Forms.TextBox txtBxComparaciones;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

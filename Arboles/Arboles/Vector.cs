@@ -31,6 +31,7 @@ namespace Arboles
 
         public int busquedaBinaria(int num)
         {
+
             li = 0;
             ls = v.Length;
             int busc = (ls + li) / 2;

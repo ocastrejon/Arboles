@@ -35,7 +35,7 @@ namespace Arboles
         }
 
         public int buscar(Nodo busca)
-        {
+        {//Agregar la posicion en la que está el valor y las comparaciones que se hicieron
             if (raiz == null)
                 return 0;
             else
