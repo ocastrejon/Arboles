@@ -14,7 +14,7 @@ namespace Arboles
         public int ls { get { return _ls; } set { _ls = value; } }
 
         Random x = new Random();
-        private int[] v = new int[8];
+        private int[] v = new int[10];
 
         public Vector()
         {
@@ -26,34 +26,36 @@ namespace Arboles
             for (int i = 0; i < v.Length; i++)
                 v[i] = x.Next(20);
             Array.Sort(v);
-
-            li = 0;
-            ls = v.Length;
             return v;
         }
 
-        public void busquedaBinaria(int num)
-        {//Terminar
+        public int busquedaBinaria(int num)
+        {
+            li = 0;
+            ls = v.Length;
             int busc = (ls + li) / 2;
+
             while (busc != li)
             {
-                if (num < v[busc])
+                if (num == v[busc])
+                    return v[busc];
+                else if (num < v[busc])
                 {
                     ls = busc;
                     busc = (ls + li) / 2;
+                    if (num == v[busc])
+                        return v[busc];
                 }
                 else
                     if (num > v[busc])
                 {
                     li = busc;
                     busc = (ls + li) / 2;
+                    if (num == v[busc])
+                        return v[busc];
                 }
             }
-        }
-
-        private void busquedaBinaria()
-        {
-
+            return 0;
         }
     }
 }

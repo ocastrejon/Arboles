@@ -52,6 +52,7 @@ namespace Arboles
 
         private void button1_Click(object sender, EventArgs e)
         {
+            txtBxVector.Clear();
             int[] z = new int[8];
                 z = v.llenarVector();
             for (int i = 0; i < z.Length; i++)
@@ -60,7 +61,9 @@ namespace Arboles
 
         private void bttnBusBinaria_Click(object sender, EventArgs e)
         {
-            v.busquedaBinaria(Convert.ToInt32(txtBxNumBuscar.Text));
+            int a = v.busquedaBinaria(Convert.ToInt32(txtBxNumBuscar.Text));
+            txtBxNumBuscar.Clear();
+            txtBxNumBuscar.Text = a.ToString();
         }
 
         private void bttnBuscarArbol_Click(object sender, EventArgs e)
